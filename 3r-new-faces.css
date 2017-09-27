@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  background: black;
+}
+
+section {
+  background: white;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+section.active {
+  display: block;
+}
+
+#faces {
+  transition: opacity 0.5s;
+}
+
+.swapping {
+  opacity: 0;
+}
+
+#please-wait, #setup {
+  padding: 25px;
+  text-align: center;
+}
+
+#current-face {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#current-name {
+  position: absolute;
+  right: 0;
+  bottom: 10vh;
+  background: rgba(183, 164, 32, 0.75);
+  color: black;
+  padding: 30px 65px;
+  font-size: 4vh;
+  font-weight: bold;
+}

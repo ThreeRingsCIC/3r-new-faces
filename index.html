@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>3R New Faces</title>
+  <link rel="stylesheet" type="text/css" href="3r-new-faces.css" />
+</head>
+<body>
+  <section id="please-wait">
+    <p>Please wait...</p>
+    <progress id="progress" value="0" max="0">
+  </section>
+
+  <section id="setup">
+    <h1>3R New Faces</h1>
+    <p>
+      To get started, enter your API key token. You can get one by going to your own Directory
+      page and clicking the "API keys" link on the right hand side, then on "New API Key".
+    </p>
+    <input type="text" id="token" />
+    <button id="start">Start</button>
+  </section>
+
+  <section id="faces">
+    <div id="current-face"></div>
+    <div id="current-name"></div>
+  </section>
+
+  <script type="text/javascript" src="3r-new-faces.js"></script>
+</body>
+</html>
